@@ -12,4 +12,4 @@ plt.ylabel('Sales Units in number')
 plt.xticks(rotation=0)
 plt.grid(linestyle='--')
 plt.legend(["Face Cream seles data", "Face Wash sales data"], loc='upper left')
-plt.show()git 
+plt.show()
