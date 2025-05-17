@@ -34,7 +34,8 @@ plt.xlabel('col(Iabs)/col(Uabs)')
 plt.ylabel('col(Uabs)^0.5')
 
 # plt.show()
-U = 1/data.loc[:, '1/col(Uabs)']
-I = data.loc[:, 'col(Iabs)/col(Uabs)']/U
+U = data.loc[:, '1/col(Uabs)']
+I = data.loc[:, 'col(Iabs)/col(Uabs)']
 
-print(f"MAX: U = {max(U)} \n     I = {max(I)} \n")
+print(f"MAX: U = {1/U.min()} \n     I = {max(I/U)} \n")
+print(f"MIN: U = {1/U.max()} \n     I = {min(I/U)} \n")
